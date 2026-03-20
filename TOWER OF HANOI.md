@@ -32,13 +32,27 @@ Consider the names of the tower pegs as A, B, C. Get the number of disks value f
 ### PROGRAM  
 
 ```
+#REGNO:-212222060117
+#Name:- Kaviyarasan S
+def TowerOfHanoi(n , source, destination, auxiliary):
+	
+	if(n>0):
+	    TowerOfHanoi(n-1, source, auxiliary,destination)
+	    print("Move disk from",source,"to",destination)
+	    TowerOfHanoi(n-1, auxiliary,destination,source)
+n=int(input())		
+print("No. of disks =",n)
+
+
 
 
 ```
 
 ### OUTPUT
 
+<img width="945" height="838" alt="image" src="https://github.com/user-attachments/assets/fc484405-dffd-4a6e-82cb-28e57c6348c5" />
 
 
 ### RESULT
 
+Thus a Python program to implement Tower of Hanoi and display all the moves of the disks using a recursive function has been executed successfully.
